@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QWidget>
 #include "square.h"
 
@@ -23,6 +24,7 @@ class Ui_mainInterface
 {
 public:
     Square *widget;
+    QLineEdit *lineEdit;
 
     void setupUi(QWidget *mainInterface)
     {
@@ -31,7 +33,10 @@ public:
         mainInterface->resize(800, 600);
         widget = new Square(mainInterface);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(80, 100, 120, 80));
+        widget->setGeometry(QRect(80, 100, 211, 251));
+        lineEdit = new QLineEdit(mainInterface);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setGeometry(QRect(400, 260, 251, 21));
 
         retranslateUi(mainInterface);
 

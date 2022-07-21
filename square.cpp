@@ -11,4 +11,11 @@ Square::Square(QWidget *parent) :
 Square::~Square()
 {
     delete ui;
+
+}
+
+void Square::on_pushButton_clicked()
+{
+    QString data = "日期";
+    emit sendData(data);
 }

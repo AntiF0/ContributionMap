@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,13 +22,21 @@ QT_BEGIN_NAMESPACE
 class Ui_Square
 {
 public:
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *Square)
     {
         if (Square->objectName().isEmpty())
             Square->setObjectName(QStringLiteral("Square"));
-        Square->resize(355, 304);
-        Square->setStyleSheet(QStringLiteral("background-color: rgb(0, 255, 0)"));
+        Square->resize(372, 398);
+        Square->setStyleSheet(QStringLiteral(""));
+        pushButton = new QPushButton(Square);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(9, 185, 31, 28));
+        pushButton_2 = new QPushButton(Square);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(189, 185, 31, 28));
 
         retranslateUi(Square);
 
@@ -37,6 +46,8 @@ public:
     void retranslateUi(QWidget *Square)
     {
         Square->setWindowTitle(QApplication::translate("Square", "Form", Q_NULLPTR));
+        pushButton->setText(QString());
+        pushButton_2->setText(QString());
     } // retranslateUi
 
 };

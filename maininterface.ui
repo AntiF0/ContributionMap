@@ -18,8 +18,18 @@
     <rect>
      <x>80</x>
      <y>100</y>
-     <width>120</width>
-     <height>80</height>
+     <width>211</width>
+     <height>251</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>260</y>
+     <width>251</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>

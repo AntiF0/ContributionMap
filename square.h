@@ -2,6 +2,7 @@
 #define SQUARE_H
 
 #include <QWidget>
+#include <QDebug>
 
 namespace Ui {
 class Square;
@@ -15,8 +16,14 @@ public:
     explicit Square(QWidget *parent = nullptr);
     ~Square();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Square *ui;
+
+signals:
+    void sendData(QString data);
 };
 
 #endif // SQUARE_H
