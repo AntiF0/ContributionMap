@@ -2,6 +2,7 @@
 #define MAININTERFACE_H
 
 #include <QWidget>
+#include <QDebug>
 #include "square.h"
 
 QT_BEGIN_NAMESPACE
@@ -19,6 +20,6 @@ public:
 private:
     Ui::mainInterface *ui;
     void iniInterface();
-    Square* square;
+    void iniConnect();
 };
 #endif // MAININTERFACE_H

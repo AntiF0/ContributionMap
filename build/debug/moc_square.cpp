@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Square_t {
-    QByteArrayData data[5];
-    char stringdata0[44];
+    QByteArrayData data[4];
+    char stringdata0[41];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,12 @@ struct qt_meta_stringdata_Square_t {
 static const qt_meta_stringdata_Square_t qt_meta_stringdata_Square = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "Square"
-QT_MOC_LITERAL(1, 7, 8), // "sendData"
-QT_MOC_LITERAL(2, 16, 0), // ""
-QT_MOC_LITERAL(3, 17, 4), // "data"
-QT_MOC_LITERAL(4, 22, 21) // "on_pushButton_clicked"
+QT_MOC_LITERAL(1, 7, 10), // "sendDatass"
+QT_MOC_LITERAL(2, 18, 0), // ""
+QT_MOC_LITERAL(3, 19, 21) // "on_pushButton_clicked"
 
     },
-    "Square\0sendData\0\0data\0on_pushButton_clicked"
+    "Square\0sendDatass\0\0on_pushButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,10 +58,10 @@ static const uint qt_meta_data_Square[] = {
        1,    1,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,   27,    2, 0x08 /* Private */,
+       3,    0,   27,    2, 0x08 /* Private */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString,    2,
 
  // slots: parameters
     QMetaType::Void,
@@ -76,7 +75,7 @@ void Square::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         Square *_t = static_cast<Square *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->sendData((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->sendDatass((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 1: _t->on_pushButton_clicked(); break;
         default: ;
         }
@@ -84,7 +83,7 @@ void Square::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             typedef void (Square::*_t)(QString );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Square::sendData)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&Square::sendDatass)) {
                 *result = 0;
                 return;
             }
@@ -129,7 +128,7 @@ int Square::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Square::sendData(QString _t1)
+void Square::sendDatass(QString _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

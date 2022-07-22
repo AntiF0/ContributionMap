@@ -16,10 +16,10 @@
   <widget class="Square" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>100</y>
-     <width>211</width>
-     <height>251</height>
+     <x>60</x>
+     <y>140</y>
+     <width>300</width>
+     <height>300</height>
     </rect>
    </property>
   </widget>
@@ -31,6 +31,19 @@
      <width>251</width>
      <height>21</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>430</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>点击</string>
    </property>
   </widget>
  </widget>

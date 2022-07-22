@@ -15,6 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 #include "square.h"
 
@@ -25,6 +26,7 @@ class Ui_mainInterface
 public:
     Square *widget;
     QLineEdit *lineEdit;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *mainInterface)
     {
@@ -33,10 +35,13 @@ public:
         mainInterface->resize(800, 600);
         widget = new Square(mainInterface);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(80, 100, 211, 251));
+        widget->setGeometry(QRect(60, 140, 300, 300));
         lineEdit = new QLineEdit(mainInterface);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
         lineEdit->setGeometry(QRect(400, 260, 251, 21));
+        pushButton = new QPushButton(mainInterface);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(490, 430, 111, 41));
 
         retranslateUi(mainInterface);
 
@@ -46,6 +51,7 @@ public:
     void retranslateUi(QWidget *mainInterface)
     {
         mainInterface->setWindowTitle(QApplication::translate("mainInterface", "mainInterface", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("mainInterface", "\347\202\271\345\207\273", Q_NULLPTR));
     } // retranslateUi
 
 };

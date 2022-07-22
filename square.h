@@ -23,7 +23,7 @@ private:
     Ui::Square *ui;
 
 signals:
-    void sendData(QString data);
+    void sendDatass(QString);
 };
 
 #endif // SQUARE_H

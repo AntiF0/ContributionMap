@@ -29,14 +29,14 @@ public:
     {
         if (Square->objectName().isEmpty())
             Square->setObjectName(QStringLiteral("Square"));
-        Square->resize(372, 398);
+        Square->resize(300, 300);
         Square->setStyleSheet(QStringLiteral(""));
         pushButton = new QPushButton(Square);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(9, 185, 31, 28));
+        pushButton->setGeometry(QRect(10, 20, 31, 28));
         pushButton_2 = new QPushButton(Square);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(189, 185, 31, 28));
+        pushButton_2->setGeometry(QRect(70, 20, 31, 28));
 
         retranslateUi(Square);
 

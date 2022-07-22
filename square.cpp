@@ -5,7 +5,7 @@ Square::Square(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Square)
 {
-    ui->setupUi(this);
+    ui->setupUi(this);    
 }
 
 Square::~Square()
@@ -16,6 +16,7 @@ Square::~Square()
 
 void Square::on_pushButton_clicked()
 {
-    QString data = "日期";
-    emit sendData(data);
+    QString data = "haha";
+    emit sendDatass(data);
+//    qDebug()<< data;
 }

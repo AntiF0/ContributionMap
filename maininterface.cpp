@@ -8,15 +8,28 @@ mainInterface::mainInterface(QWidget *parent)
     , ui(new Ui::mainInterface)
 {
     ui->setupUi(this);
-    ui->widget->show();
 
-    connect(square, &Square::sendData, [=](QString data){
-        ui->lineEdit->setText(data);
-    });
+    iniConnect();
 }
 
 mainInterface::~mainInterface()
 {
     delete ui;
 }
+
+// 初始化connect连接
+void mainInterface::iniConnect()
+{
+//    Square* square = new Square();
+    //    square = new Square();
+    connect(ui->widget, &Square::sendDatass, [=](QString data){
+        ui->lineEdit->setText(data);
+        qDebug()<< "收到了信号";
+    });
+
+    connect(ui->pushButton, &QPushButton::clicked, [=](){
+        ui->lineEdit->setText("data");
+    });
+}
+
 
